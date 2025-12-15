@@ -1,0 +1,25 @@
+telegram-miniapp/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── main.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   │
+│   ├── components/
+│   │   ├── BottomNav.jsx
+│   │   ├── Header.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Tasks.jsx
+│   │   ├── Games.jsx
+│   │   ├── Profile.jsx
+│   │
+│   └── hooks/
+│       └── useTelegram.js
+│
+├── package.json
+└── vite.config.js
