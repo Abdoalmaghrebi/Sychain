@@ -1,12 +1,41 @@
-body {
-  background-color: #fff;
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes coinBounce {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+        .click-animation {
+            animation: pulse 0.1s ease-in-out;
+        }
+        .coin-float {
+            position: absolute;
+            animation: coinBounce 1s forwards;
+        }
+       
+          
+    #task1-progress {
+  max-width: 100%;
 }
-.container {
-  width: 100%;
-    height: 100%;
-      --color: rgba(114, 114, 114, 0.3);
-        background-color: #197a1a;
-          background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-                linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-                  background-size: 55px 55px;
-                  }
+
+          
+          .progress-bar {
+  
+ 
+
+ 
+  border-radius: 5px;
+  overflow: hiddn;
+           
+  height: 100%;
+ 
+  
+ 
+          
+          
+            transition: width 0.5s ease-in-out;
+        }
+    
